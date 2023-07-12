@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Software Change Log</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+    }
+    .months {
+      flex: 0 0 120px;
+    }
+    .month-button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 8px 16px;
+      background-color: #f0f0f0;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    .month-button:hover {
+      background-color: #e0e0e0;
+    }
+    .release-details {
+      flex: 1;
+      margin-left: 20px;
+    }
+    .release {
+      margin-bottom: 20px;
+    }
+    .release h3 {
+      margin: 0;
+      color: rgb(119, 107, 226); /* RGB color for version number */
+    }
+    .release-date {
+      font-size: 14px;
+      color: #666;
+    }
+    .section {
+      margin-top: 16px; /* Add spacing between sections */
+    }
+    .section h4 {
+      color: #333; /* Dark gray color for section titles */
+    }
+    .section ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 4px;
+    }
+    .section li {
+      margin-bottom: 4px;
+      font-size: 12px; /* Smaller font size for list items */
+      color: #333; /* Dark gray color for list items */
+    }
+    .section p {
+      margin: 2px 0; /* Reduce spacing between items and descriptions */
+      font-size: 11px; /* Smaller font size for descriptions */
+      color: #555; /* Dark gray color for descriptions */
+      margin-top: 0;
+    }
+    /* New Feature styles */
+    .new-feature {
+      background-color: #D1F2EB; /* Light green background color for new features */
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    /* Bug Fix styles */
+    .bug-fix {
+      background-color: #F7D6E0; /* Light pink background color for bug fixes */
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    /* Update styles */
+    .update {
+      background-color: #F8F8F8; /* Light gray background color for updates */
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="months">
+      <button class="month-button">July 2023</button>
+    </div>
+    <div class="release-details">
+      <div class="release">
+        <h3 style="color: rgb(119, 107, 226);">Version 1.5.475</h3>
+        <p class="release-date">July 12, 2023</p>
+        <div class="section">
+          <h4>New Feature</h4>
+          <div class="new-feature">
+            <ul>
+              <li>Introducing Cash Transaction Invoice Creation</li>
+            </ul>
+            <p>We are excited to announce the addition of a powerful new feature: Cash Transaction Invoice Creation. With this update, users can now generate invoices specifically for cash transactions, providing greater flexibility and efficiency in managing financial transactions. Streamline your invoicing process and enjoy enhanced control over your cash transactions.</p>
+          </div>
+        </div>
+        <div class="section">
+          <h4>Bug Fix</h4>
+          <div class="bug-fix">
+            <ul>
+              <li>Fixed an Functionality of Action Close</li>
+            </ul>
+            <p>Resolved an issue where the "Action Close" function was not functioning as intended. Users can now utilize this feature without encountering any errors or unexpected behavior, ensuring smoother workflow operations.</p>
+          </div>
+          <div class="bug-fix">
+            <ul>
+              <li>Fixed an Error with Contact Access</li>
+            </ul>
+            <p>Fixed a bug that caused a stacktrace error when attempting to access certain contacts. Users can now seamlessly retrieve and interact with contacts without encountering any error messages or disruptions.</p>
+          </div>
+          <div class="bug-fix">
+            <ul>
+              <li>Fixed an Error in Approval Requests Overview</li>
+            </ul>
+            <p>Resolved an issue that caused a stacktrace error to occur in the approval requests overview. Users can now access and review approval requests without encountering any error messages, ensuring a smoother approval process.</p>
+          </div>
+          <div class="bug-fix">
+            <ul>
+              <li>Filter in Approval Process Overview</li>
+            </ul>
+            <p>Fixed a bug that prevented the filter by approvers option from working properly in the approval process overview's grid view. Users can now utilize this filtering functionality as intended, enhancing their ability to manage and track approval processes effectively.</p>
+          </div>
+        </div>
+        <div class="section">
+          <h4>Update</h4>
+          <div class="update">
+            <ul>
+              <li>Minor Design Enhancements</li>
+            </ul>
+            <p>Implemented various small design fixes to improve the overall visual appeal and user experience of the product. These enhancements enhance the aesthetics and usability of the interface, resulting in a more polished and intuitive application.</p>
+          </div>
+          <div class="update">
+            <ul>
+              <li>Improved Security: Invalidating One-Time Code after Use in the Portal</li>
+            </ul>
+            <p>Enhanced the portal functionality by implementing an update that automatically invalidates one-time codes once they have been utilized. This ensures greater security and prevents unauthorized access by rendering the code unusable after its initial use.</p>
+          </div>
+          <div class="update">
+            <ul>
+              <li>Email Communication in Client Portal</li>
+            </ul>
+            <p>Added a proxy to facilitate email communication sent through the client portal. This update enhances the reliability and delivery of emails, ensuring seamless correspondence between users and clients within the portal environment.</p>
+          </div>
+          <div class="update">
+            <ul>
+              <li>Documents Uploaded to Client Portal</li>
+            </ul>
+            <p>Updated the default behavior when uploading documents to the client portal by automatically enabling the shareable setting. This enhancement ensures that documents are readily accessible and shareable with clients, streamlining collaboration and information exchange.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Add event listener to the submit button
+    window.addEventListener('message', function(event) {
+      if (event.data && event.data.type === 'submitChangeLog') {
+        // Extract the submitted change log data
+        var changeType = event.data.changeType;
+        var changeTitle = event.data.changeTitle;
+        var description = event.data.description;
+        var releaseDate = event.data.releaseDate;
+
+        // Create the new release entry HTML
+        var releaseEntry = '<div class="release">' +
+          '<h3 style="color: rgb(119, 107, 226);">' + changeTitle + '</h3>' +
+          '<p class="release-date">' + releaseDate + '</p>' +
+          '<div class="section">' +
+          '<h4>' + changeType + '</h4>' +
+          '<div class="' + changeType + '">' +
+          '<ul>' +
+          '<li>' + description + '</li>' +
+          '</ul>' +
+          '<p></p>' +
+          '</div>' +
+          '</div>' +
+          '</div>';
+
+        // Insert the new release entry at the top of the existing entries
+        var releaseDetails = document.querySelector('.release-details');
+        releaseDetails.insertAdjacentHTML('afterbegin', releaseEntry);
+      }
+    });
+  </script>
+</body>
+</html>
